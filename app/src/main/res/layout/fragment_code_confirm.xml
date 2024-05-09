@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    tools:context=".auth.CodeConfirmFragment">
+
+    <ImageButton
+        android:id="@+id/back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_launcher_foreground"
+        android:layout_gravity="top"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="please enter verification code"
+        android:textStyle="bold"
+        android:textAppearance="@style/TextAppearance.MaterialComponents.Headline5"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="To confirm, enter the code from SMS"/>
+
+    <LinearLayout
+        android:id="@+id/code_confirm_container"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginVertical="8dp"
+        android:layout_marginHorizontal="16dp">
+
+        <TextView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:text=" "
+            android:layout_marginVertical="2dp"
+            android:layout_marginHorizontal="3dp"
+            android:background="?attr/colorTertiary"/>
+
+        <TextView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:text=" "
+            android:layout_marginVertical="2dp"
+            android:layout_marginHorizontal="3dp"
+            android:background="?attr/colorTertiary"/>
+        <TextView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:text=" "
+            android:layout_marginVertical="2dp"
+            android:layout_marginHorizontal="3dp"
+            android:background="?attr/colorTertiary"/>
+        <TextView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:text=" "
+            android:layout_marginVertical="2dp"
+            android:layout_marginHorizontal="3dp"
+            android:background="?attr/colorTertiary"/>
+
+    </LinearLayout>
+
+
+
+<!--    <LinearLayout-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:orientation="horizontal"-->
+<!--        android:layout_gravity="center">-->
+
+<!--        <TextView-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="if you didn't receive a code, you can try after "/>-->
+
+<!--        <TextView-->
+<!--            android:id="@+id/count_down"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="60 seconds"/>-->
+
+<!--    </LinearLayout>-->
+
+</LinearLayout>

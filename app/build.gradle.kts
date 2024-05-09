@@ -33,15 +33,34 @@ android {
         sourceCompatibility = JavaVersion.VERSION_1_8
         targetCompatibility = JavaVersion.VERSION_1_8
     }
+    composeOptions {
+        kotlinCompilerExtensionVersion = "1.5.13"
+    }
     kotlinOptions {
         jvmTarget = "1.8"
+    }
+    buildFeatures {
+        viewBinding = true
+        //noinspection DataBindingWithoutKapt
+        dataBinding = true
+        compose = true
+        buildConfig = true
     }
 }
 
 dependencies {
 
-    implementation ("com.google.dagger:hilt-android:2.51.1")
-    annotationProcessor ("com.google.dagger:hilt-compiler:2.51.1")
+    implementation (libs.androidx.activity.compose)
+    implementation (libs.androidx.runtime.livedata)
+    implementation (libs.androidx.ui)
+    implementation (libs.androidx.ui.tooling.preview)
+    implementation (libs.androidx.material)
+    implementation (libs.androidx.ui.viewbinding)
+    implementation (libs.androidx.navigation.compose)
+
+    implementation (libs.sms.confirmation.view)
+    implementation (libs.hilt.android)
+    annotationProcessor (libs.hilt.compiler)
     implementation (libs.androidx.room.runtime)
     annotationProcessor (libs.androidx.room.room.compiler)
     ksp (libs.androidx.room.room.compiler)
