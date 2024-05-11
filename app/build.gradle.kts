@@ -50,13 +50,13 @@ android {
 
 dependencies {
 
+    // compose
     implementation (libs.androidx.activity.compose)
     implementation (libs.androidx.runtime.livedata)
     implementation (libs.androidx.ui)
     implementation (libs.androidx.ui.tooling.preview)
     implementation (libs.androidx.material)
     implementation (libs.androidx.ui.viewbinding)
-    implementation (libs.androidx.navigation.compose)
 
     implementation (libs.sms.confirmation.view)
     implementation (libs.hilt.android)

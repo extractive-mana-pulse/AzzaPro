@@ -5,6 +5,12 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.compose.foundation.layout.Column
+import androidx.compose.foundation.layout.fillMaxWidth
+import androidx.compose.material.Text
+import androidx.compose.runtime.Composable
+import androidx.compose.ui.Modifier
+import androidx.compose.ui.tooling.preview.Preview
 import androidx.navigation.fragment.findNavController
 import com.example.azzapro.R
 import com.example.azzapro.auth.util.showKeyboard
@@ -21,11 +27,17 @@ class CodeConfirmFragment : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
+
         binding.apply {
-            codeConfirmContainer.setOnClickListener {
-                it.showKeyboard()
+
+            topAppBar.setNavigationOnClickListener {
+                findNavController().popBackStack()
             }
-            back.setOnClickListener { findNavController().popBackStack() }
+
+            confirmBtn.setOnClickListener {
+                findNavController().navigate(R.id.action_codeConfirmFragment_to_homeFragment)
+            }
+
         }
     }
 }

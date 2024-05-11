@@ -1,91 +1,55 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
-    android:gravity="center"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context=".auth.CodeConfirmFragment">
 
-    <ImageButton
-        android:id="@+id/back"
-        android:layout_width="wrap_content"
+    <com.google.android.material.appbar.MaterialToolbar
+        android:id="@+id/topAppBar"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:src="@drawable/ic_launcher_foreground"
-        android:layout_gravity="top"/>
+        android:minHeight="?attr/actionBarSize"
+        app:title="Enter"
+        app:titleCentered="true"
+        app:navigationIcon="@drawable/arrow_back"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"/>
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="please enter verification code"
-        android:textStyle="bold"
-        android:textAppearance="@style/TextAppearance.MaterialComponents.Headline5"/>
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="To confirm, enter the code from SMS"/>
-
-    <LinearLayout
-        android:id="@+id/code_confirm_container"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:gravity="center"
-        android:layout_marginVertical="8dp"
-        android:layout_marginHorizontal="16dp">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintTop_toBottomOf="@id/topAppBar"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent">
 
         <TextView
-            android:layout_width="30dp"
-            android:layout_height="30dp"
-            android:text=" "
-            android:layout_marginVertical="2dp"
-            android:layout_marginHorizontal="3dp"
-            android:background="?attr/colorTertiary"/>
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:layout_marginVertical="8dp"
+            android:layout_marginHorizontal="16dp"
+            android:text="Please enter the code sent to your mobile"
+            android:textAppearance="@style/TextAppearance.AppCompat.Title"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"/>
 
-        <TextView
-            android:layout_width="30dp"
-            android:layout_height="30dp"
-            android:text=" "
-            android:layout_marginVertical="2dp"
-            android:layout_marginHorizontal="3dp"
-            android:background="?attr/colorTertiary"/>
-        <TextView
-            android:layout_width="30dp"
-            android:layout_height="30dp"
-            android:text=" "
-            android:layout_marginVertical="2dp"
-            android:layout_marginHorizontal="3dp"
-            android:background="?attr/colorTertiary"/>
-        <TextView
-            android:layout_width="30dp"
-            android:layout_height="30dp"
-            android:text=" "
-            android:layout_marginVertical="2dp"
-            android:layout_marginHorizontal="3dp"
-            android:background="?attr/colorTertiary"/>
+        <Button
+            android:id="@+id/confirm_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/confirm"
+            android:layout_marginVertical="8dp"
+            android:layout_marginHorizontal="16dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"/>
 
-    </LinearLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
 
-
-
-<!--    <LinearLayout-->
-<!--        android:layout_width="wrap_content"-->
-<!--        android:layout_height="wrap_content"-->
-<!--        android:orientation="horizontal"-->
-<!--        android:layout_gravity="center">-->
-
-<!--        <TextView-->
-<!--            android:layout_width="wrap_content"-->
-<!--            android:layout_height="wrap_content"-->
-<!--            android:text="if you didn't receive a code, you can try after "/>-->
-
-<!--        <TextView-->
-<!--            android:id="@+id/count_down"-->
-<!--            android:layout_width="wrap_content"-->
-<!--            android:layout_height="wrap_content"-->
-<!--            android:text="60 seconds"/>-->
-
-<!--    </LinearLayout>-->
-
-</LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
