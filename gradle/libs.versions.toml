@@ -17,6 +17,7 @@ constraintlayout = "2.1.4"
 materialVersion = "1.6.7"
 navigationUiKtx = "2.7.7"
 navigationFragmentKtx = "2.7.7"
+otpView = "1.1"
 retrofit = "2.9.0"
 runtimeLivedata = "1.6.7"
 smsConfirmationView = "1.8.1"
@@ -44,6 +45,7 @@ androidx-appcompat = { group = "androidx.appcompat", name = "appcompat", version
 material = { group = "com.google.android.material", name = "material", version.ref = "material" }
 androidx-activity = { group = "androidx.activity", name = "activity", version.ref = "activity" }
 androidx-constraintlayout = { group = "androidx.constraintlayout", name = "constraintlayout", version.ref = "constraintlayout" }
+otp-view = { module = "com.github.appsfeature:otp-view", version.ref = "otpView" }
 retrofit = { module = "com.squareup.retrofit2:retrofit", version.ref = "retrofit" }
 sms-confirmation-view = { module = "com.github.fraggjkee:sms-confirmation-view", version.ref = "smsConfirmationView" }
 

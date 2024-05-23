@@ -58,6 +58,10 @@ dependencies {
     implementation (libs.androidx.material)
     implementation (libs.androidx.ui.viewbinding)
 
+    implementation (libs.otp.view)
+
+
+    implementation (libs.androidx.appcompat)
     implementation (libs.sms.confirmation.view)
     implementation (libs.hilt.android)
     annotationProcessor (libs.hilt.compiler)

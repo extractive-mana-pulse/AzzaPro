@@ -30,6 +30,7 @@ class MainActivity : AppCompatActivity() {
         val fragmentsToHideBottomNav = setOf(
             R.id.loginFragment,
             R.id.codeConfirmFragment,
+            R.id.profileFragment
             )
 
         navController.addOnDestinationChangedListener { _, destination, _ ->

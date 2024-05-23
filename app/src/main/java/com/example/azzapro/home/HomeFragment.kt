@@ -22,6 +22,5 @@ class HomeFragment : Fragment() {
         binding.apply {
 
         }
-
     }
 }

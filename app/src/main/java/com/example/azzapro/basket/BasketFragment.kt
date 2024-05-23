@@ -1,13 +1,11 @@
-package com.example.azzapro.home
+package com.example.azzapro.basket
 
 import android.os.Bundle
-import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import com.example.azzapro.R
+import androidx.fragment.app.Fragment
 import com.example.azzapro.databinding.FragmentBasketBinding
-
 
 class BasketFragment : Fragment() {
 

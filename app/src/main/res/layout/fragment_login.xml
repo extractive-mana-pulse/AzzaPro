@@ -6,7 +6,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical"
     android:gravity="center"
-    tools:context=".auth.LoginFragment">
+    tools:context=".auth.presentation.fragments.LoginFragment">
 
     <TextView
         android:layout_width="wrap_content"
